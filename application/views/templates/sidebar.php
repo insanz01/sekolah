@@ -28,7 +28,7 @@
       <li><a href="<?= base_url('home/stok_hampir_habis'); ?>"><i class="fa fa-circle-o text-yellow"></i> <span>Stok Hampir Habis</span></a></li>
       <li><a href="<?= base_url('home/best_seller'); ?>"><i class="fa fa-circle-o text-aqua"></i> <span>Best Seller</span></a></li>
       <li class="header">LAINNYA</li>
-      <li><a href="#" data-toggle="modal" data-target="#modal-logout">Keluar</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#modal-logout"><i class="fa fa-sign-out"></i><span>Keluar</span></a></li>
     </ul>
   </section>
   <!-- /.sidebar -->

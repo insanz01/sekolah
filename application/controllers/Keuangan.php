@@ -64,4 +64,10 @@ class Keuangan extends CI_Controller
   {
     // akan membatalkan verifikasi
   }
+
+  public function log_transaksi()
+  {
+    // menampilkan log transaksi yang telah dilakukan
+    // disini juga nanti akan menampilkan detail serta pembatalan verifikasi, jika ada kesalahan
+  }
 }
