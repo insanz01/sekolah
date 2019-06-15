@@ -8,16 +8,16 @@ class Auth extends CI_Controller
   {
     parent::__construct();
 
-    if ($this->session->has_userdata('id')) {
-      redirect('main');
-    }
-
     $this->load->model('Auth_Model');
     $this->data['judul'] = "Sistem Sekolah";
   }
 
   public function index()
   {
+    if ($this->session->has_userdata('id')) {
+      redirect('main');
+    }
+
     $this->form_validation->set_rules('username', 'Username', 'required|trim', [
       'required' => 'Username harus diisi'
     ]);
@@ -38,7 +38,7 @@ class Auth extends CI_Controller
       ];
 
       if ($this->Auth_Model->login($user)) {
-        redirect('home');
+        redirect('main');
       } else {
         $this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">Ops.. Perika kembali username dan password anda.</div>');
 

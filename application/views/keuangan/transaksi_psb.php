@@ -31,6 +31,7 @@
                   <th>Tanggal Bayar</th>
                   <th>Bukti Pembayaran</th>
                   <th>Pembayaran</th>
+                  <th>Aksi</th>
                 </tr>
               </thead>
               <tbody>
@@ -41,6 +42,9 @@
                   <td>Fri, 17 Aug 1945</td>
                   <td><img src="" alt="foto bukti pembayaran"></td>
                   <td>Pendaftaran</td>
+                  <td>
+                    <a href="<?= base_url('keuangan/verifikasi/') ?>" class="btn btn-primary">Verifikasi</a>
+                  </td>
                 </tr>
               </tbody>
               <tfoot>
@@ -51,6 +55,7 @@
                   <th>Tanggal Bayar</th>
                   <th>Bukti Pembayaran</th>
                   <th>Pembayaran</th>
+                  <th>Aksi</th>
                 </tr>
               </tfoot>
             </table>
