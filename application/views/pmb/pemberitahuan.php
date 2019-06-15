@@ -16,6 +16,13 @@
   <section class="content">
     <div class="row">
       <div class="col-md-12" style="padding: 10px">
+        <div class="text-center">
+          <?= $this->session->flashdata('pesan'); ?>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12" style="padding: 10px">
         <button type="button" data-toggle="modal" data-target="#modal-pemberitahuan" class="btn btn-primary pull-right">Tambah Pemberitahuan</button>
       </div>
     </div>

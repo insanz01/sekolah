@@ -9,7 +9,7 @@ class Auth extends CI_Controller
     parent::__construct();
 
     if ($this->session->has_userdata('id')) {
-      redirect('home');
+      redirect('main');
     }
 
     $this->load->model('Auth_Model');

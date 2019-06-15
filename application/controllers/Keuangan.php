@@ -8,6 +8,10 @@ class Keuangan extends CI_Controller
   {
     parent::__construct();
 
+    if (!$this->session->has_userdata('id') && $this->session->userdata('role_id') != 5) {
+      redirect('auth');
+    }
+
     $this->load->model('Home_Model');
 
     $user = $this->Home_Model->dapatkanDataUser($this->session->userdata('id'));
